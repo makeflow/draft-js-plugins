@@ -1,7 +1,10 @@
 {
-  "name": "draft-js-plugins-editor",
-  "version": "2.1.1",
+  "name": "@makeflow/draft-js-plugins-editor",
+  "version": "2.1.2",
   "description": "Editor for DraftJS Plugins",
+  "publishConfig": {
+    "access": "public"
+  },
   "author": {
     "name": "Nik Graf",
     "email": "nik@nikgraf.com",

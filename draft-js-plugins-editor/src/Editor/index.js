@@ -69,14 +69,14 @@ class PluginEditor extends Component {
     this.state = {}; // TODO for Nik: ask ben why this is relevent
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     const decorator = resolveDecorators(this.props, this.getEditorState, this.onChange);
 
     const editorState = EditorState.set(this.props.editorState, { decorator });
     this.onChange(moveSelectionToEnd(editorState));
   }
 
-  componentWillReceiveProps(next) {
+  UNSAFE_componentWillReceiveProps(next) {
     const curr = this.props;
     const currDec = curr.editorState.getDecorator();
     const nextDec = next.editorState.getDecorator();
